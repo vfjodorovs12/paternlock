@@ -1,0 +1,96 @@
+# CodeIgniter Pattern Lock - .gitignore
+
+# CodeIgniter specific
+*/config/development
+*/logs/log-*.php
+*/logs/!index.html
+*/cache/*
+*/cache/!index.html
+*/cache/!.htaccess
+
+# User-specific configuration (keep templates, ignore actual config with secrets)
+application/config/database.php
+application/config/email.php
+
+# Encryption keys and secrets
+*.key
+*.pem
+*.p12
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Composer
+vendor/
+composer.lock
+
+# Node modules (if using any build tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build files
+dist/
+build/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*~
+
+# Upload directories (if any)
+uploads/*
+!uploads/index.html
+
+# Session files
+sessions/
+session.save_path/
+
+# Database dumps
+*.sql.gz
+*.sql.zip
+backup-*.sql
+
+# Documentation build
+docs/_build/
+
+# Coverage reports
+coverage/
+*.coverage
+
+# Debug files
+debug.log
+error.log
